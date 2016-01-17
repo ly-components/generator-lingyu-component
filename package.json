@@ -1,0 +1,39 @@
+{
+  "name": "generator-lingyu-component",
+  "version": "1.0.0",
+  "description": "An UMD component generator of Yeoman, babel+webpack+less+mocha+istanbul",
+  "homepage": "https://github.com/LingyuCoder/generator-lingyu-component",
+  "author": "LingyuCoder <lingyucoder@gmail.com> (lingyucoder.github.io)",
+  "files": [
+    "app"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "umd",
+    "component",
+    "webpack",
+    "babel",
+    "less",
+    "mocha",
+    "istanbul"
+  ],
+  "dependencies": {
+    "camel-case": "^1.2.2",
+    "yeoman-generator": "~0.20.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:LingyuCoder/generator-lingyu-component.git",
+    "web": "https://github.com/LingyuCoder/generator-lingyu-component"
+  },
+  "bugs": {
+    "url": "https://github.com/LingyuCoder/generator-lingyu-component/issues/"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "license": "MIT"
+}
