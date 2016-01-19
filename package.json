@@ -1,6 +1,6 @@
 {
   "name": "generator-lingyu-component",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An UMD component generator of Yeoman, babel+webpack+less+mocha+istanbul",
   "homepage": "https://github.com/LingyuCoder/generator-lingyu-component",
   "author": "LingyuCoder <lingyucoder@gmail.com> (lingyucoder.github.io)",
