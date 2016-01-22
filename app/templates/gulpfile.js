@@ -4,7 +4,6 @@ const pretty = require('pretty-error');
 const open = require('open');
 const gulp = require('gulp');
 const del = require('del');
-const uglify = require('gulp-uglify');
 const gulpWebpack = require('gulp-webpack');
 const execSync = require('child_process').execSync;
 const cmd = command => execSync(command, {
@@ -16,7 +15,6 @@ gulp.task('clean', cb => del(['dist', 'coverage'], cb));
 gulp.task('build', ['clean'], () => {
   return gulp.src('./src/index.js')
     .pipe(gulpWebpack(require('./webpack.pub')))
-    .pipe(uglify())
     .pipe(gulp.dest('dist'));
 });
 

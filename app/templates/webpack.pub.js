@@ -1,5 +1,6 @@
 const path = require('path');
 module.exports = {
+  devtool: 'source-map',
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'index.js',
@@ -10,16 +11,17 @@ module.exports = {
     modulesDirectories: ['node_modules', './src'],
     extensions: ['', '.js']
   },
+  postcss: [require('autoprefixer')],
   module: {
     loaders: [{
       test: /\.js$/,
       loader: 'babel'
     }, {
       test: /\.less$/,
-      loader: 'style!css!autoprefixer!less'
+      loader: 'style!css!postcss!less'
     }, {
       test: /\.css$/,
-      loader: 'style!css!autoprefixer'
+      loader: 'style!css!postcss'
     }]
   }
 };

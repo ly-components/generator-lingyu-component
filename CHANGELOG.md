@@ -1,5 +1,9 @@
 # generator-lingyu-component
 
+## 1.2.0
+
+* change autoprefixer-loader to postcss-loader and autoprefixer
+
 ## 1.1.1
 
 * fix del module not found bug

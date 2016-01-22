@@ -10,6 +10,7 @@ module.exports = {
     modulesDirectories: ['node_modules', './src'],
     extensions: ['', '.js']
   },
+  postcss: [require('autoprefixer')],
   module: {
     loaders: [{
       test: /\.js$/,
@@ -24,10 +25,10 @@ module.exports = {
       }
     }, {
       test: /\.less$/,
-      loader: 'style!css!autoprefixer!less'
+      loader: 'style!css!postcss!less'
     }, {
       test: /\.css$/,
-      loader: 'style!css!autoprefixer'
+      loader: 'style!css!postcss'
     }]
   }
 };

@@ -1,5 +1,6 @@
 const path = require('path');
 module.exports = {
+  devtool: 'cheap-module-eval-source-map',
   entry: {
     demo: [
       'webpack-dev-server/client?http://127.0.0.1:8848',
@@ -17,16 +18,17 @@ module.exports = {
     modulesDirectories: ['node_modules', './src'],
     extensions: ['', '.js']
   },
+  postcss: [require('autoprefixer')],
   module: {
     loaders: [{
       test: /\.js$/,
       loader: 'babel'
     }, {
       test: /\.less$/,
-      loader: 'style!css!autoprefixer!less'
+      loader: 'style!css!postcss!less'
     }, {
       test: /\.css$/,
-      loader: 'style!css!autoprefixer'
+      loader: 'style!css!postcss'
     }]
   }
 };
